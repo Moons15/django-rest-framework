@@ -18,7 +18,7 @@ class Token(models.Model):
         on_delete=models.CASCADE, verbose_name=_("User"),blank=True,null=True
     )
     business = models.OneToOneField(
-        settings.AUTH_USER_MODEL, related_name='auth_token_business',
+        Business, related_name='auth_token_business',
         on_delete=models.CASCADE, verbose_name=_("Business"),blank=True,null=True
     )
     contact = models.OneToOneField(
