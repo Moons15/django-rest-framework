@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='token',
             name='business',
-            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='auth_token_business', to=settings.AUTH_USER_MODEL, verbose_name='Business'),
+            field=models.OneToOneField(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='auth_token_business', to='account.Business', verbose_name='Business'),
         ),
         migrations.AddField(
             model_name='token',
